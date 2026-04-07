@@ -1,7 +1,7 @@
 [package]
 name = "suprezip"
 version = "0.1.0"
-description = "A high-performance Zip64 compression app"
+description = "Universal Extractor powered by Rust"
 authors = ["Rhee Hose"]
 edition = "2021"
 rust-version = "1.77.2"
@@ -22,8 +22,15 @@ tauri-plugin-shell = "2"
 tauri-plugin-os = "2.0.0"
 tauri-plugin-dialog = "2.0.0"
 tauri-plugin-log = "2"
-zip = { version = "2.2.2", features = ["deflate", "zstd"] }
+zip = { version = "2.3.0", features = ["deflate", "zstd", "bzip2"] }
+sevenz-rust = "0.6.1"
+iso9660 = "0.1.1"
+backhand = "0.12.0"
+goblin = "0.8.2"
 encoding_rs = "0.8"
 rayon = "1.10"
 walkdir = "2.5"
 anyhow = "1.0"
+chrono = "0.4"
+futures = "0.3"
+tokio = { version = "1", features = ["full"] }
