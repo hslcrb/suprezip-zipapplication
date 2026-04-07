@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Suprezip - The Ultimate Compression",
-  description: "High-performance Zip64 compression powered by Rust and Next.js",
+  title: "수프레집 (Suprezip) - 초강력 압축기",
+  description: "Rust 엔진 기반의 압본질적으로 성능이 뛰어난 압축 해제 프로그램",
 };
 
 export default function RootLayout({
@@ -24,10 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="ko"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col no-scrollbar selection:bg-primary/30">
+      <body className="min-h-full flex flex-col no-scrollbar selection:bg-blue-600/30">
         {children}
       </body>
     </html>
