@@ -1,7 +1,7 @@
 [package]
 name = "suprezip"
-version = "0.1.0"
-description = "Universal Extractor powered by Rust"
+version = "1.0.0"
+description = "Enterprise-Grade Universal Extractor for Secure Environments"
 authors = ["Rhee Hose"]
 edition = "2021"
 rust-version = "1.77.2"
@@ -34,3 +34,9 @@ anyhow = "1.0"
 chrono = "0.4"
 futures = "0.3"
 tokio = { version = "1", features = ["full"] }
+sha2 = "0.10"
+md-5 = "0.10"
+hex = "0.4"
+winreg = "0.52"
+dashmap = "6.0"
+uuid = { version = "1.0", features = ["v4", "serde"] }
